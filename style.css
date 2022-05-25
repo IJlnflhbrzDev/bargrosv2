@@ -2149,6 +2149,29 @@ article.jasa_barang {
   margin-right: 8px !important;
 }
 
+@media screen and (max-width: 552px) {
+  .testimonials .description-testimonials {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .testimonials .carousel-inner .carousel-item {
+    padding: 30px 10px;
+  }
+  .testimonials .carousel-control-next,
+  .testimonials .carousel-control-prev {
+    width: 9%;
+  }
+  .testimonials .carousel-inner {
+    width: 80;
+  }
+  .testimonials .carousel-inner .carousel-item {
+    height: auto !important;
+  }
+}
+
 #faq .nav-pills .nav-link {
   text-align: left;
 }

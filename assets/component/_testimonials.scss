@@ -31,4 +31,34 @@
      }
 }
 
-@media screen and (max-width: 552px) {}
+@media screen and (max-width: 552px) {
+
+     .testimonials .description-testimonials {
+          font-size: 14px;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+     }
+
+     .testimonials .carousel-inner .carousel-item {
+          padding: 30px 10px;
+     }
+
+     .testimonials {
+
+          .carousel-control-next,
+          .carousel-control-prev {
+               width: 9%;
+          }
+     }
+
+     .testimonials .carousel-inner {
+          width: 80;
+
+     }
+
+     .testimonials .carousel-inner .carousel-item {
+          height: auto !important;
+     }
+}

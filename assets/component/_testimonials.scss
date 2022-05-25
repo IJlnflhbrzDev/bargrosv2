@@ -29,9 +29,18 @@
           }
 
      }
+
+
+}
+
+.pl-80 {
+     padding-left: 80px !important;
 }
 
 @media screen and (max-width: 552px) {
+     .pl-sm-0 {
+          padding-left: 20px !important;
+     }
 
      .testimonials .description-testimonials {
           font-size: 14px;

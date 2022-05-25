@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/image/favicon.png" sizes="32x32" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../assets/fontawesome5/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+
+    <link href="../style.css" rel="stylesheet">
+    <title>Produk DetailBargros</title>
+  </head>
+
+  <body class="bgr-body-produk-detail">
+    <div class="parent-loader d-none">
+      <div class="container">
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
+      <h2 class="animate-text-loader">Loading</h2>
+    </div>
+    <!-- SECTION NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container-fluid ">
+        <!-- LOGO BRAND -->
+        <div class="navbar-wrapper">
+          <div class="navbar-wrapper-content">
+
+            <div class="brand-app">
+              <a class="navbar-brand" style="color: #03ac0e;" href="index.html">
+                <b> Bargros.id</b>
+              </a>
+            </div>
+            <div class="d-flex align-items-center badge-mobile">
+              <div class="navbar-icon ">
+                <div class="navbar-icon">
+                  <div class="icon-keranjang ">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class=" badge-notification badge-notification-mobile" data-count="0">0</span>
+                  </div>
+                  <div class="icon-notifikasi ">
+                    <i class="fas fa-bell"></i>
+
+
+                  </div>
+                  <div class="icon-chat ">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                </div>
+              </div>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ">
+
+              <form class="d-flex">
+                <div class="input-group ">
+                  <input type="search" class="form-control" id="search" name="search" placeholder="Cari starp masker"
+                    aria-label="Cari starp masker" aria-describedby="basic-addon1">
+                  <span class="input-group-text" id="basic-addon1">
+                    <button type="submit" class="submit-search">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+
+
+              <!-- icons navbar  -->
+
+              <div class="navbar-icon navbar-icon-dekstop">
+                <div class="icon-keranjang">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class=" badge-notification badge-notification-dekstop" data-count="0">0</span>
+                </div>
+                <div class="icon-notifikasi">
+                  <i class="fas fa-bell"></i>
+
+
+                </div>
+                <div class="icon-chat">
+                  <i class="fas fa-envelope"></i>
+                </div>
+              </div>
+              <div class="separator-right"></div>
+              <div class="menu-user d-flex justify-content-around align-items-center">
+                <!-- KETIKA USER SUDAH LOGIN SHOW 2 MENU INI START -->
+                <div class="nama-toko ">
+                  <i class="fas fa-tachometer-alt"></i>
+                  <span class="nama-toko-title">
+                    Dashboard
+                  </span>
+                </div>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-user"></i>
+
+                    IJlal Naufal Hibrizi
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item" href="index.html">Profile Saya</a></li>
+                    <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                  </ul>
+                </li>
+                <!-- KETIKA USER SUDAH LOGIN SHOW 2 MENU INI END -->
+
+                <!-- KETIKA USER BLUM LOGIN SHOW 2 BUTTON INI START -->
+                <div class="btn-login me-2 d-none">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLogin">
+                    Masuk
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Masuk Ke
+                            Akun Kamu </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form class="w-100">
+                            <div class="mb-3">
+                              <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                              <input type="password" aria-describedby="passwordHelp" class="form-control"
+                                id="exampleInputPassword1" placeholder="Password">
+                              <div class="input-info mt-1 d-flex justify-content-between align-items-center w-100">
+                                <div class="lupa-kata-sandi">
+                                  <small>Lupa Kata Sandi? </small>
+                                  <a href="index.html">Klik
+                                    Disini</a>
+
+                                </div>
+                                <div class="aktivasi-akun">
+                                  <small>Aktivasi Akun? </small>
+                                  <a href="index.html">Klik
+                                    Disini</a>
+
+                                </div>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Masuk</button>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <small>Belum Punya Akun?</small>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalRegister">
+                            Silahkan Daftar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- register  -->
+                <div class="btn-register d-none">
+
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                    data-bs-target="#modalRegister">
+                    Daftar
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="modalRegister" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Daftar
+                            Akun Baru Sekarang </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form class="w-100">
+                            <div class="mb-3">
+                              <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                            <div class=" mb-3">
+                              <input id="exampleInputNomorTelepon" type="number" class="form-control"
+                                placeholder="Nomor Telepon" aria-label="Nomor Telepon" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="mb-3">
+                              <input type="password" aria-describedby="passwordHelp" class="form-control" id="password"
+                                placeholder="Password">
+                            </div>
+                            <div class="mb-3">
+                              <input type="password" aria-describedby="passwordHelp" class="form-control"
+                                id="confirm-password" placeholder="Confirm Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Daftar</button>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+
+                          <small>Sudah Punya Akun?</small>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalLogin">
+                            Login Disini
+                          </button>
+
+
+                          <div class="syarat-ketentuan">
+                            <small>Dengan mendaftar, Saya menyetujui <a href="index.html" class="aturan-pengunaan">
+                                Aturan Pengunaan</a> dan <a href="index.html" class="kebijakan-privasi">Kebijakan
+                                Privasi</a></small>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- KETIKA USER BLUM LOGIN SHOW 2 BUTTON INI END  -->
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="produk-detail mt-5 mb-5">
+      <div class="container">
+        <nav aria-label='breadcrumb mt-5 mb-5'>
+          <ol class='breadcrumb'>
+            <li class='breadcrumb-item'><a href='index.html'>Home</a></li>
+            <li class='breadcrumb-item active' aria-current='page'>Produk Detail</li>
+          </ol>
+        </nav>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="parent-image">
+              <div class="produk-image">
+                <div class="thumb">
+                  <img
+                    src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                    alt="produk-detail" class="thumb-small">
+                  <img
+                    src="https://images.unsplash.com/photo-1518894781321-630e638d0742?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNob2VzfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                    alt="produk-detail" class="thumb-small">
+                  <img
+                    src="https://images.unsplash.com/photo-1529810313688-44ea1c2d81d3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNob2VzfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                    alt="produk-detail" class="thumb-small">
+                  <img
+                    src="https://images.unsplash.com/photo-1621881538090-b2b5ffaa996a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2hvZXN8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                    alt="produk-detail" class="thumb-small">
+                  <img
+                    src="https://images.unsplash.com/photo-1630497568500-33765ff55396?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNuZWFrZXJzfGVufDB8MnwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                    alt="produk-detail" class="thumb-small">
+                </div>
+                <div class="image-large">
+                  <img
+                    src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2hvZXN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                    alt="produk-detail" class="thumbnail" id="change-img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="produk-detail-tab" data-bs-toggle="tab"
+                  data-bs-target="#produk-detail" type="button" role="tab" aria-controls="produk-detail"
+                  aria-selected="true">Produk Detail</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="produk-detail" role="tabpanel"
+                aria-labelledby="produk-detail-tab">
+                <div class="content-produk-detail mt-3">
+                  <h3>Judul Produk Detail</h3>
+                  <input hidden value="1" id="inputHiddenExistsVariant" />
+                  <div class="price-produk-detil"></div>
+                  <div class="select-variant" id="templateListVariant"></div>
+
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Kategori Barang</th>
+                        <td scope="col" id="harga-produk">Fashion Muslim > apa > 3
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Nama Toko </th>
+                        <td> <a href="produk-detail.html">IJlnflhrbz Store</a> </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Lokasi Toko </th>
+                        <td>Sawangan, Depok, Jawabarat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Berat </th>
+                        <td>12gram</td>
+                      </tr>
+                      <tr class="draw_stok"></tr>
+                      <tr>
+                        <th scope="row">Jumlah</th>
+                        <td class="btn_plusMinus">
+                          <div class="input-jumlah">
+                            <button class="btn btn-primary" onclick="calculatePrice(`minus`)" type="button"
+                              id="btnMinusStok">-</button>
+                            <span id="valueStok">1</span>
+                            <button class="btn btn-primary" onclick="calculatePrice(`plus`)" type="button"
+                              id="btnPlusStok">+ </button>
+                            <div class="inputHiddens"></div>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="btn-produk-detail">
+
+                    <button type="button" class="btn btn-success"> Beli Sekarang </button>
+                    <button type="button" class="btn btn-primary" id="btnAddToCart"> Tambah Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="info-toko" role="tabpanel" aria-labelledby="info-toko-tab">
+                <div class="info-toko-penjual mt-5 mb-5">
+                  <div class="row">
+                    <div class="col-xl-4 col lg-4 col-md-6 col-sm-12">
+                      <div>
+                        <img
+                          src="https://images.unsplash.com/photo-1617293541301-688e0c4bf092?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzNnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60">
+                        <div>
+                          <h4>Nama Toko</h4>
+                          <small>Terakhir dilihat 1 jam yang lalu</small>
+                          <br />
+                          <button type="button" class="btn btn-outline-primary btn-sm">Kunjungi Toko</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col lg-4 col-md-6 col-sm-12">
+                      <small>Lokasi</small>
+                      <small>Bekasi</small>
+                    </div>
+                    <div class="col-xl-4 col lg-4 col-md-6 col-sm-12">
+                      <small>Bergabung </small>
+                      <small>1 tahun yang lalu</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="parent_description-produk">
+              <p class="description-produk mt-3">
+                Nam tempus turpis at metus scelerisque placerat nulla deumantos solicitud
+                felis.
+                Pellentesque diam dolor, elementum etos lobortis des mollis
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="mt-5 p-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 col-md-12 col-sm-6 col-xs-12  mb-sm-12">
+            <div class="title_content text-center">
+              <small class="mt-2 text-muted" style="font-size: 14px;">&copy; Copy 2022 Bargros.id</small>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6 col-xs-12 d-none ">
+            <div class="title_link">
+              <h6>Useful Links</h6>
+              <ul>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    About us
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Team of service
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Privacy policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6 col-xs-12 d-none">
+            <div class="title_service">
+              <h6>Connect With Us</h6>
+              <ul>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Email
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Youtube
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="produk-detail.js"></script>
+  </body>
+
+</html>

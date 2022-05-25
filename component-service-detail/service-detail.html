@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <title>Service Detail</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../assets/fontawesome5/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+
+  </head>
+
+  <body>
+    <!-- SECTION NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+      <div class="container-fluid ">
+        <!-- LOGO BRAND -->
+        <div class="navbar-wrapper">
+          <div class="navbar-wrapper-content">
+            <div class="brand-app">
+              <a class="navbar-brand" style="color: #03ac0e;" href="index.html">
+                <b> Bargros.id</b>
+              </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
+              <form class="d-flex">
+                <div class="input-group ">
+                  <input type="search" class="form-control" id="search" name="search" placeholder="Cari starp masker"
+                    aria-label="Cari starp masker" aria-describedby="basic-addon1">
+                  <span class="input-group-text" id="basic-addon1">
+                    <button type="submit" class="submit-search">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </span>
+                </div>
+              </form>
+              <!-- icons navbar  -->
+
+              <div class="navbar-icon ">
+                <div class="icon-keranjang">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="icon-notifikasi">
+                  <i class="fas fa-bell"></i>
+
+
+                </div>
+                <div class="icon-chat">
+                  <i class="fas fa-envelope"></i>
+                </div>
+              </div>
+              <div class="separator-right"></div>
+              <div class="menu-user d-flex justify-content-around align-items-center">
+                <!-- KETIKA USER SUDAH LOGIN SHOW 2 MENU INI START -->
+                <div class="nama-toko ">
+                  <i class="fas fa-store"></i>
+                  <span class="nama-toko-title">
+                    Toko Saya
+                  </span>
+                </div>
+                <div class="nama-user ">
+                  <i class="fas fa-user"></i>
+                  <span class="nama-user-title ">
+                    IJlal Naufal Hibrizi
+                  </span>
+                </div>
+                <!-- KETIKA USER SUDAH LOGIN SHOW 2 MENU INI END -->
+
+                <!-- KETIKA USER BLUM LOGIN SHOW 2 BUTTON INI START -->
+                <div class="btn-login me-2 d-none">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLogin">
+                    Masuk
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Masuk Ke
+                            Akun Kamu </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form class="w-100">
+                            <div class="mb-3">
+                              <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                              <input type="password" aria-describedby="passwordHelp" class="form-control"
+                                id="exampleInputPassword1" placeholder="Password">
+                              <div class="input-info mt-1 flex-box-input w-100">
+                                <div class="lupa-kata-sandi">
+                                  <small>Lupa Kata Sandi? </small>
+                                  <a href="index.html">Klik
+                                    Disini</a>
+
+                                </div>
+                                <div class="aktivasi-akun">
+                                  <small>Aktivasi Akun? </small>
+                                  <a href="index.html">Klik
+                                    Disini</a>
+                                </div>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Masuk</button>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <small>Belum Punya Akun?</small>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalRegister">
+                            Silahkan Daftar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- register  -->
+                <div class="btn-register d-none">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                    data-bs-target="#modalRegister">
+                    Daftar
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="modalRegister" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Daftar
+                            Akun Baru Sekarang </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form class="w-100">
+                            <div class="mb-3">
+                              <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Email">
+                            </div>
+                            <div class=" mb-3">
+                              <input id="exampleInputNomorTelepon" type="number" class="form-control"
+                                placeholder="Nomor Telepon" aria-label="Nomor Telepon" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="mb-3">
+                              <input type="password" aria-describedby="passwordHelp" class="form-control" id="password"
+                                placeholder="Password">
+                            </div>
+                            <div class="mb-3">
+                              <input type="password" aria-describedby="passwordHelp" class="form-control"
+                                id="confirm-password" placeholder="Confirm Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Daftar</button>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <small>Sudah Punya Akun?</small>
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalLogin">
+                            Login Disini
+                          </button>
+                          <div class="syarat-ketentuan">
+                            <small>Dengan mendaftar, Saya menyetujui <a href="index.html" class="aturan-pengunaan">
+                                Aturan Pengunaan</a> dan <a href="index.html" class="kebijakan-privasi">Kebijakan
+                                Privasi</a></small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- KETIKA USER BLUM LOGIN SHOW 2 BUTTON INI END  -->
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="service-detail mt-5 mb-5">
+      <div class="boxicons-card">
+        <div class="container">
+          <!-- PILST SERVICE DETAIL -->
+
+          <div class="tab-content mt-5" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="kenapa-bergabung" role="tabpanel"
+              aria-labelledby="kenapa-bergabung-tab">
+              <h2>Kenapa Bergabung? </h2>
+              <div class="row align-items-end mt-5" id="kenapa-bergabung-row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card">
+                    <div class="position-relative">
+                      <img src="../assets/icon/box.png" class="card-img-top" alt="image">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">local pride produk <br />asli indonesia</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card">
+                    <div class="position-relative">
+                      <div class="counter-image">
+                      </div>
+                      <img src="../assets/icon/social-media.png" class="card-img-top" alt="image">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        jaringan iklan &<br />marketing yang luas
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card">
+                    <div class="position-relative">
+                      <div class="counter-image"></div>
+                      <img src="../assets/icon/solution.png" class="card-img-top" alt="image">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">PILIHAN SOLUSI BEKERJA SAMA
+                        SESUAI KEBUTUHAN
+                        BISNIS ANDA
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card">
+                    <div class="position-relative">
+                      <img src="../assets/icon/reward.png" class="card-img-top" alt="image">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">JASA PRODUKSI YANG <br />
+                        PROFESSIONAL
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card">
+                    <div class="position-relative">
+                      <img src="../assets/icon/technical-support.png" class="card-img-top" alt="image">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">layanan customer service <br /> yang handal
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="card">
+                    <div class="position-relative">
+                      <img src="../assets/icon/presentation.png" class="card-img-top" alt="image">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">BELAJAR DARI STATISTIK DATA
+                        DAN STAFF AHLI FASHION KAMI
+
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-primary mt-5">Bergabung Disini</button>
+
+
+              <section class="card-pricisig mt-5 text-center" id="kenapa-bergabung-pricising">
+                <div class="container-fluid">
+                  <h2 class="text-center" style="font-size: 2.25rem; opacity: 0.9; line-height: 1.25;">Gabung bersama
+                    platform Product Rebranding <br />
+                    pertama di Indonesia
+                  </h2>
+                  <p class="text-center" style="font-size: 16px ; opacity: 0.9;">Pilih membership sesuai kebutuhan
+                    bisnis mu
+                  </p>
+
+                  <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                      <div class="pricising-card">
+                        <div class="card">
+
+                          <div class="card-body">
+                            <div class="card-header" style="font-size: 26px;">
+                              Free Reseller
+                            </div>
+
+                            <div class="description-card">
+                              <p>Untuk kamu yang baru
+                                mulai bisnis online
+                                tanpa modal, tanpa
+                                ribet.</p>
+                            </div>
+                            <hr />
+                            <div class="price-info service-detail-price">
+                              <ul style="font-weight: 600;">
+                                <li>GRATIS SELAMANYA</li>
+                              </ul>
+                              <hr />
+                            </div>
+                            <ul>
+                              <li>TANPA MODAL;
+                                kamu cukup
+                                bergabung, dan
+                                berjualan produk
+                                yang ada di
+                                Bargros.id</li>
+                              <li>HARGA GROSIR;
+                                semua produk
+                                harga grosir, kamu
+                                bisa jual lagi
+                                dengan margin
+                                keuntungan lebih
+                                besar</li>
+                              <li>BISA DROPSHIP;
+                                kirim pesanan ke
+                                seluruh Indonesia
+                                tanpa ribet, kami
+                                yang packing dan
+                                kirim semua
+                                pesananmu.</li>
+                            </ul>
+                          </div>
+                          <a href="../index.html" class="btn  btn-outline-primary"
+                            style="width: max-content; margin: 0 auto;">Daftar Sekarang</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                      <div class="pricising-card">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="card-header" style="font-size: 26px;">
+                              Rebrand
+                            </div>
+                            <div class="description-card">
+                              <p>Untuk kamu yang ingin
+                                punya Brand sendiri
+                                untuk mengembangkan
+                                bisnis mu</p>
+                            </div>
+                            <hr />
+                            <div class="price-info service-detail-price">
+                              <ul style="font-weight: 600;">
+                                <li class="corret">Rp. 200,000</li>
+                                <li>Rp. 99.000 / Bulan</li>
+                                <li>1 Tahun</li>
+                                <li class="not-featured">1.188.000</li>
+                                <li>990.000</li>
+                              </ul>
+
+                            </div>
+
+                            <hr />
+                            <ul>
+                              <li>PAKAI MERK
+                                SENDIRI; kamu bisa
+                                pesanan produk
+                                pakai merk sendiri.
+                                Meskipun hanya 1
+                                Pcs</li>
+                              <li>BISA RESI
+                                OTOMATIS; kirim
+                                pesanan
+                                marketplace
+                                dengan mudah</li>
+                              <li>FREE DESIGN
+                                LOGO; gratis design
+                                logo untuk Brand
+                                kamu punya</li>
+                              <li>FREE DESIGN
+                                KEMASAN; gratis
+                                design kemasan
+                                untuk brand yang
+                                kamu punya</li>
+                              <li>ANTI RIBET; kami
+                                yang packing dan
+                                kirim semua
+                                pesanan mu</li>
+
+                            </ul>
+                          </div>
+                          <a href="../index.html" class="btn  btn-outline-primary"
+                            style="width: max-content; margin: 0 auto;">Daftar Sekarang</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                      <div class="pricising-card">
+                        <div class="card platinum">
+
+                          <div class="card-body">
+                            <div class="card-header" style="font-size: 26px;">
+                              Maklon
+                            </div>
+                            <div class="description-card">
+                              <p>Untuk kamu yang
+                                punya modal tapi
+                                masih bingung mau
+                                produksi apa. Tenang,
+                                kami yang urus
+                                semuanya.</p>
+                            </div>
+                            <hr />
+                            <div class="price-info service-detail-price">
+                              <ul style="font-weight: 600;">
+                                <li class="corret">Rp 250,000</li>
+                                <li>Rp 149.000 / Bulan</li>
+                                <li>1 Tahun</li>
+                                <li class="not-featured">1.788.00</li>
+                                <li>1.490.00</li>
+                              </ul>
+
+                            </div>
+
+                            <hr />
+                            <ul>
+                              <li>HARGA MAKLON;
+                                kamu bisa produksi
+                                dengan harga
+                                maklon yang lebih
+                                murah. Dengan
+                                MOQ sesuai
+                                ketentuan</li>
+                              <li>
+                                BISA CUSTOM
+                                PRODUCT; kamu
+                                bisa produksi
+                                dengan custom
+                                sesuai keinginan
+                                mu, mulai dari
+                                bahan ataupun
+                                design
+                              </li>
+                              <li>FREE DESIGN
+                                LOGO; gratis design
+                                logo untuk Brand
+                                produk mu</li>
+                              <li>
+                                FREE DESIGN
+                                KEMASAN; gratis
+                                design kemasan
+                                untuk Brand
+                                produk mu
+                              </li>
+                              <li>FREE LABEL SATIN;
+                                gratis label satin
+                                untuk produk mu
+                                sebanyak 200 pcs</li>
+                              <li>FREE FOTO
+                                PRODUK; gratis
+                                foto katalog (tanpa
+                                model) produk
+                                untuk brand mu</li>
+
+
+                            </ul>
+                          </div>
+                          <a href="../index.html" class="btn  btn-outline-primary"
+                            style="width: max-content; margin: 0 auto;">Daftar Sekarang</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                      <div class="pricising-card">
+                        <div class="card platinum">
+
+                          <div class="card-body">
+                            <div class="card-header" style="font-size: 26px;">
+
+                              Mitra Seller
+                            </div>
+                            <div class="description-card">
+                              <p>Untuk kamu yang ingin
+                                meningkatkan omzet
+                                penjualan. Bergabung
+                                bersama kami sebagai
+                                mitra penjual</p>
+                            </div>
+                            <hr />
+                            <div class="price-info service-detail-price">
+                              <ul style="font-weight: 600;">
+                                <li class="corret">Rp 290.000</li>
+                                <li>Rp. 49.000 / Bulan</li>
+                                <li>1 Tahun</li>
+                                <li class="not-featured">2.388.00</li>
+                                <li>1.990.00</li>
+                              </ul>
+
+                            </div>
+
+                            <hr />
+                            <ul>
+                              <li>Sistem titip jual
+                                /konsinyasi</li>
+                              <li>Exposure ekslusif
+                                untuk produk mu
+                                di halaman utama
+                                website bargros
+                              </li>
+                              <li>FREE FOTO
+                                PRODUK KATALOG;
+                                gratis foto katalog
+                                produk (tanpa
+                                model) untuk
+                                brand mu </li>
+                              <li>FREE SOCIAL
+                                MEDIA ADS;
+                                produk mu akan di
+                                ikut sertakan
+                                dalam iklan bargros
+                                di social media
+                                secara gratis </li>
+                              <li>
+                                HANDLING
+                                PESANAN; kami
+                                urus semua
+                                pesanan produk
+                                mu, mulai dari
+                                penyimpanan
+                                barang, packing
+                                dan pengiriman
+                              </li>
+                              <li>FREE CUSTOMER
+                                SERVICE; team CS
+                                Profesional kami
+                                siap membantu
+                                menangani
+                                aftersales brand
+                                mu.</li>
+
+                            </ul>
+                          </div>
+                          <a href="../index.html" class="btn  btn-outline-primary"
+                            style="width: max-content; margin: 0 auto;">Daftar Sekarang</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 col-sm-6 col-xs-12  mb-sm-4">
+            <div class="title_content">
+              <h5 class="mb-3">Bargros</h5>
+              <p>PT Bargros Solusi Usaha<br>
+                Sawangan, Kota Depok<br>
+                Jawa Barat
+              </p>
+              <p>
+                <strong>Phone: </strong>0828 5770 7180 55 <br>
+                <strong>Email: </strong>featured-per-1-tahun@bargros.id<br>
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6 col-xs-12 ">
+            <div class="title_link">
+              <h6>Useful Links</h6>
+              <ul>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    About us
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Team of service
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Privacy policy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 col-sm-6 col-xs-12 ">
+            <div class="title_service">
+              <h6>Connect With Us</h6>
+              <ul>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Email
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                    </svg>
+                    Youtube
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>

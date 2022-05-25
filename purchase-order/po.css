@@ -1,0 +1,143 @@
+:root {
+	--primary-color: #168cd0;
+}
+body {
+	font-weight: 400;
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 1.4em;
+}
+@media print {
+	.fl-table th {
+		background-color: var(--primary-color) !important;
+		color: white !important;
+	}
+	.ship-to h3 {
+		background-color: var(--primary-color) !important;
+		color: white !important;
+	}
+}
+.purchase-order {
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	padding: 10px;
+}
+.purchase-order h1 {
+	font-weight: bold;
+	color: var(--primary-color) !important;
+}
+.purchase-order .top-po {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	align-items: start;
+}
+.po-right,
+.po-left {
+	width: 100%;
+}
+.child-right {
+	width: 50%;
+	margin-left: auto;
+}
+.po-left h2 {
+	color: var(--primary-color) !important;
+	font-weight: bold;
+}
+
+/* table */
+.total-table {
+	color: var(--primary-color) !important;
+	font-weight: bold;
+}
+.table-wrapper {
+	margin-top: 20px;
+}
+.fl-table {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.fl-table td,
+.fl-table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+.no-hover td,
+.no-hover th {
+	text-align: left !important;
+}
+.table-left {
+	border-left: 2px solid #ddd !important;
+}
+.fl-table tr.no-hover:nth-child(even) {
+	background-color: transparent !important;
+}
+.fl-table tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.fl-table tr.no-hover:hover {
+	background-color: transparent !important;
+}
+.fl-table tr:hover {
+	background-color: #ddd;
+}
+
+.fl-table th {
+	text-align: center;
+
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: var(--primary-color) !important;
+	color: white;
+}
+
+.tanda-tangan {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	text-align: center;
+}
+
+.instructions {
+	margin-top: 8px;
+	height: 150px;
+	border: 1px solid #ddd;
+}
+.instructions h3 {
+	background-color: white;
+	color: var(--primary-color) !important;
+	border-bottom: 1px solid #ddd;
+	margin: 0px;
+	padding: 5px;
+	font-weight: bold;
+}
+.vendor {
+	width: 48%;
+	margin-top: 20px;
+	height: 150px;
+	border: 1px solid #ddd;
+}
+.vendor h3 {
+	background-color: var(--primary-color) !important;
+	color: white;
+	margin: 0px;
+	padding: 5px;
+	font-weight: bold;
+}
+.ship-to {
+	width: 48%;
+	margin-top: 20px;
+	height: 150px;
+	border: 1px solid #ddd;
+}
+.ship-to h3 {
+	background-color: var(--primary-color) !important;
+	color: white;
+	margin: 0px;
+	padding: 5px;
+	font-weight: bold;
+}

@@ -1,0 +1,78 @@
+.paket-detail {
+	margin-top: 50px;
+	.content {
+		h2 {
+			font-size: 40px;
+			line-height: 1.25;
+			font-weight: 600;
+		}
+
+		.sub-title {
+			font-size: .875rem;
+			opacity: .6;
+			font-weight: 500;
+		}
+		p {
+			font-size: 18px;
+		}
+	}
+	.boxicons-card {
+		margin-top: 90px;
+		.card {
+			padding: 20px 20px;
+			border: none;
+			.card-body {
+				padding: 1rem 0px;
+			}
+
+			img {
+				max-width: 3.25rem;
+				min-height: 3.25rem;
+				width: 3.25rem;
+				height: 3.25rem;
+				position: relative;
+				z-index: 2;
+			}
+			h5 {
+				font-size: 1.5rem;
+				line-height: 1.25;
+				opacity: .9;
+				font-weight: 600;
+				margin-bottom: 20px;
+			}
+			p {
+				color: rgb(156, 163, 175);
+			}
+		}
+
+		.counter-image {
+			background-color: rgb(250, 219, 138);
+			width: 2rem;
+			height: 2rem;
+			border-radius: 10px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+		}
+	}
+
+	.box-icons {
+		img {
+			display: block;
+			width: 48px;
+			height: 48px;
+		}
+		p {
+			color: black;
+			font-size: 1.125rem;
+			margin: 1rem 0px;
+		}
+		a.btn {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+}

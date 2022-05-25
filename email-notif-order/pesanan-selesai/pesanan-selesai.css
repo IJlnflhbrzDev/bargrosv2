@@ -1,0 +1,70 @@
+#pesanan-selesai {
+	font-weight: 400;
+	line-height: 1.2;
+	width: 60%;
+
+	margin: 0px auto;
+	padding: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.gap-bottom {
+	width: 100%;
+	border-bottom: 2px solid black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.max-content {
+	width: max-content;
+}
+.gap-bottom.mb-0 {
+	margin-bottom: 0px !important;
+}
+
+.visibility-hidden {
+	visibility: hidden !important;
+}
+.btn-konfirmasi-pembayaran {
+	cursor: pointer;
+	padding: 5px 25px;
+	font-weight: 600;
+	display: block;
+	font-size: 13px;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 1px solid black;
+	margin-top: 15px;
+	color: gray;
+}
+.w-60 {
+	width: 60%;
+}
+
+.btn-konfirmasi-pembayaran:hover {
+	background-color: #efefef;
+	color: black;
+}
+
+@media screen and (max-width: 500px) {
+	#pesanan-selesai .w-75 {
+		width: 100%;
+	}
+	#pesanan-selesai .max-content {
+		width: 100% !important;
+	}
+	#pesanan-selesai {
+		width: 100%;
+		padding: 5px 0px;
+	}
+	#pesanan-selesai .w-60 {
+		width: 100% !important;
+	}
+	#pesanan-selesai .w-68 {
+		width: 90% !important;
+	}
+	#pesanan-selesai .w-84 {
+		width: 65%;
+	}
+}

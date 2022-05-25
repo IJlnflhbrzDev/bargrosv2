@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Membuat Template Invoice Mengunakan Bootstrapt4">
+    <meta name="author" content="IJlal Naufal Hibrizi">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../assets/fontawesome5/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+    <title>Invoice</title>
+  </head>
+
+  <body>
+
+    <!-- SECTION NAMA TOKO  -->
+    <section class="container mt-5 invoice">
+      <div class="row justify-content-between align-items-end">
+        <div class="col-lg-7">
+          <h1>TheBargros.id</h1>
+          <table class="table table-borderless nama_toko w-100">
+            <tr class="label-invoice">
+              <td style="width: 23%;">Nomor Invoice</td>
+              <td style="width: 2%;">:</td>
+              <td>2021/INV/0001123123123 </td>
+            </tr>
+            <tr>
+              <td>Diterbitkan Atas Nama </td>
+              <td style="width: 2%;">:</td>
+              <td>IJlal Naufal Hibrizi</td>
+            </tr>
+            <tr>
+              <td><b>Penjual</b></td>
+              <td>:</td>
+              <td>IJlnflhbrzz</td>
+            </tr>
+            <tr>
+              <td><b>Tanggal</b></td>
+              <td>:</td>
+              <td>
+                13 Oktober 2002
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="col-lg-5">
+          <article class="nama_pembeli mt-3">
+            <b>Tujuan Pengiriman:</b>
+            <br />
+            <h3 class="mt-2">Cantika Sanjaya</h3>
+            <p>Perumahan Dukuh Bima Cluster Bima Asri 6
+              Nomor 16 kota legenda Desa Lambang Sari
+              Tambun Selatan Kab. Bekasi 17510
+              Jawa Barat
+              6281284713455</p>
+          </article>
+        </div>
+      </div>
+      <hr>
+    </section>
+
+    <!-- SECTION NAMA PRODUK  -->
+    <section class="container " id="nama_produk">
+      <div class="row align-content-end">
+        <div class="col-lg-12">
+          <article class="detail_produk">
+            <table class="table table-borderless" style="margin-bottom: 82px;">
+              <thead>
+                <tr style="border: 0;">
+                  <th scope="col">Nama Produk</th>
+                  <th scope="col">Jumlah</th>
+                  <th scope="col">Berat</th>
+                  <th scope="col">Harga Barang</th>
+                  <th scope="col">Subtotal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Celana Sirwal Pria <br> Grey,M<br>SKU - SIRWAL-IZZY
+                  </td>
+                  <td>400 gr</td>
+                  <td>Rp 126.000</td>
+                  <td>Rp 126.000</td>
+                  <td>Rp 126.000</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </article>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-lg-6 d-flex align-items-center  justify-content-between border-top border-dark pt-2"></div>
+        <div class="col-lg-6 d-flex align-items-center  justify-content-between border-top border-dark pt-2">
+          <h6>Subtotal Harga Barang</h6>
+          <h6>Rp 126.000</h6>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION  JASA PENGIRIMAN BARANG-->
+    <section class="container  mt-2 position-relative d-flex justify-content-center align-items-end flex-column">
+      <article class="jasa_barang border-dotted">
+        <small class="d-flex justify-content-between">
+          <span>Sicepat - BEST (Berat: 400 gr)</span>
+          <span>Rp 13.000</span>
+        </small>
+        <small class="d-flex justify-content-between border-top">
+          <span>
+            <b>Subtotal Ongkos Kirim</b>
+          </span>
+          <span>
+            <b>Rp 13.000</b>
+          </span>
+        </small>
+      </article>
+      <!-- TOTAL Belanja -->
+      <article class="jasa_barang mb-1">
+        <!-- total bayar -->
+        <small class=" total_bayar d-flex justify-content-between">
+          <span>
+            <b>Total Bayar</b>
+          </span>
+          <span>
+            <b>Rp 139.000</b>
+          </span>
+        </small>
+      </article>
+      <!-- POTONGAN ONGKIR -->
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>

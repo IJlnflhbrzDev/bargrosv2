@@ -1,0 +1,113 @@
+{
+     "status_code": 200,
+     "found": true,
+     "message": "",
+     "data": [
+          {
+               "receive_name" : "ijlal naufal hibrizi",
+               "receive_phone" : "089786986",
+               "province_id" : 1,
+               "province_name" : "jawabarat",
+               "district_id" : 1,
+               "district_name" : "bekasi",
+               "subdistrict_id" : 1,
+               "subdistrict_name" : "cikarang barat",
+               "full_address" : "jalan nona merah desa telaga asih kec cikarang barat kab bekasi ",
+               "post_code" : 17520,
+               "is_default" : 1,
+               "address_id" : 1
+          },
+          {
+               "receive_name" : "ricky sanjaya",
+               "receive_phone" : "0866778821837",
+               "province_id" : 2,
+               "province_name" : "jawa tengah",
+               "district_id" : 2,
+               "district_name" : "brebes",
+               "subdistrict_id" : 2,
+               "subdistrict_name" : "ngapak",
+               "full_address" : "Jalan Nona Biru sing ngapak lorem dolor si amet this simple dumy text",
+               "post_code" : 17530,
+               "is_default" : 2,
+               "address_id" :2
+          }
+
+
+     ],
+
+     "table_product" : [
+          {
+               "cart_id" : 1,
+               "product_id" : 1,
+               "product_name" : "Lorem ipsum dolor sit amet",
+               "total_qty" : 5,
+               "total_sell_price" : "1,400,000",
+               "photo" : "https://images.unsplash.com/photo-1536814294574-df49a3cc97bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bXVzbGltJTIwZ2lybHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+               "sell_price" : "700000",
+               "stok" : 7,
+               "warehouse_id" : 1,
+               "warehouse_name": "Gudang 1"
+          },
+          {
+               "cart_id" : 2,
+               "product_id" : 2,
+               "product_name" : "ipsum lorem dolor sit amet",
+               "total_qty" : 3,
+               "total_sell_price" : "1,200,000",
+               "photo" : "https://images.unsplash.com/photo-1586682643135-060f061868b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fG11c2xpbSUyMGdpcmxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+               "sell_price" : "100000",
+               "stok" : 9,
+               "warehouse_id" : 1,
+               "warehouse_name": "Gudang 1"
+          },
+          {
+               "cart_id" : 3,
+               "product_id" : 3,
+               "product_name" : "dolor Lorem ipsum sit amet",
+               "total_qty" : 4,
+               "total_sell_price" : "1,100,000",
+               "photo" : "https://images.unsplash.com/photo-1551411979-4b7e24ec51e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG11c2xpbSUyMGdpcmxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+               "sell_price" : "300000",
+               "stok" : 7,
+               "warehouse_id" : 2,
+               "warehouse_name": "Gudang 2"
+          },
+          {
+               "cart_id" : 4,
+               "product_id" : 4,
+               "product_name" : "dolor Lorem ipsum sit amet",
+               "total_qty" : 5,
+               "total_sell_price" : "1,100,000",
+               "photo" : "https://images.unsplash.com/photo-1640645318880-4b00a652c953?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+               "sell_price" : "300000",
+               "stok" : 7,
+               "warehouse_id" : 2,
+               "warehouse_name": "Gudang 2"
+          },
+          {
+               "cart_id" : 5,
+               "product_id" : 5,
+               "product_name" : "dolor Lorem ipsum sit amet",
+               "total_qty" : 2,
+               "total_sell_price" : "1,100,000",
+               "photo" : "https://images.unsplash.com/photo-1638913658828-afb88c3d4d11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1OHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60",
+               "sell_price" : "300000",
+               "stok" : 7,
+               "warehouse_id" : 3,
+               "warehouse_name": "Gudang 3"
+          },
+          {
+               "cart_id" : 6,
+               "product_id" : 6,
+               "product_name" : "dolor Lorem ipsum sit amet",
+               "total_qty" : 3,
+               "total_sell_price" : "1,100,000",
+               "photo" : "https://images.unsplash.com/photo-1551411979-4b7e24ec51e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG11c2xpbSUyMGdpcmxzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+               "sell_price" : "300000",
+               "stok" : 7,
+               "warehouse_id" : 3,
+               "warehouse_name": "Gudang 3"
+          }
+     ]
+
+}

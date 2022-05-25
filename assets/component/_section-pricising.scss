@@ -1,0 +1,233 @@
+.card-pricisig {
+
+	.nav-tabs {
+		border: 0;
+	}
+
+	.paket-desckription {
+		.btn-primary-opacitybv2 {
+			font-size: 20px;
+			border-radius: 5px;
+		}
+	}
+
+	.not-featured {
+		text-decoration: line-through;
+		color: #b3b3b3;
+	}
+
+	.label-pricising {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		border-bottom: 1px solid lightgray;
+
+		h2.card-title {
+			margin-bottom: 0px;
+		}
+
+		.btn {
+			background-color: white;
+			color: black;
+			border: 1px solid transparent;
+
+			&:hover {
+				background-color: transparent;
+				color: white;
+				border: 1px solid white;
+			}
+		}
+	}
+
+	.bgr-free {
+		background-color: transparent;
+		color: black;
+	}
+
+	.bgr-rebrand {
+		background-color: #58ccdb;
+	}
+
+	.bgr-maklon {
+		background-color: #ff8a65;
+	}
+
+	.bgr-mitra {
+		background-color: #757575;
+	}
+
+	.row {
+
+		.col-lg-4,
+		.col-md-6,
+		.col-sm-12 {
+			display: flex;
+			justify-content: center;
+			align-items: stretch;
+		}
+	}
+
+	.card {
+		position: relative;
+		background-color: white;
+		height: 100%;
+		border: 0;
+
+		.card-body {
+			padding: 0px !important;
+		}
+
+		.btn {
+			margin-top: 10px;
+		}
+
+		.show-detail {
+			background-color: transparent;
+			border-bottom-width: 10px;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 1px dashed gray;
+			border-radius: 0;
+			padding: 0;
+			position: absolute;
+			bottom: 0;
+			color: black;
+			opacity: .6;
+			left: 50%;
+			transform: translatex(-50%);
+			text-align: center;
+			width: 54%;
+		}
+
+		.parent-price-card {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			.rupiah-card {
+				font-size: 28px;
+				font-weight: 100;
+				margin-right: 5px;
+			}
+
+			.zero-card {
+				font-weight: 500;
+				font-size: 30px;
+			}
+
+			// list pricising
+		}
+
+		.bulan-card {
+			display: block;
+			font-size: 17px;
+		}
+
+		ul {
+			padding: 1.24rem 1.25rem 0px 1.25rem;
+
+			li {
+				line-height: 1.25;
+				margin-bottom: .75rem;
+				font-size: 16px;
+				list-style-type: none;
+			}
+		}
+	}
+
+	p {
+		font-size: .875rem;
+		margin-bottom: 1.25rem;
+	}
+
+	.nav-link {
+		padding: .3rem 2.5rem;
+		border-radius: 40px;
+	}
+
+	.nav-pills {
+		border: 1px solid white;
+		border-radius: 40px;
+		width: max-content;
+		margin: 0 auto;
+		padding: 2px;
+		overflow: hidden;
+	}
+
+	.tab-content {
+		margin: 3rem;
+	}
+}
+
+#kenapa-bergabung-pricising {
+	.card {
+		.card-header {
+			font-size: 19px;
+			font-weight: 500;
+			text-align: left;
+			text-transform: uppercase;
+		}
+
+		ul {
+			padding: 0rem 1.25rem 0px 1.25rem;
+
+			li {
+				line-height: 1.25;
+				margin-bottom: .75rem;
+				font-size: 15px;
+				text-align: left;
+				list-style: disc;
+				margin-left: 20px;
+			}
+		}
+
+		.description-card {
+			text-align: left;
+			margin-left: 20px;
+			margin-top: 15px;
+		}
+
+		.price-info {
+			ul {
+				li {
+					list-style: none;
+				}
+			}
+		}
+	}
+}
+
+.pricising-card {
+	width: 580px;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+	.card-pricisig .row .col-lg-4,
+	.card-pricisig .row .col-md-6,
+	.card-pricisig .row .col-sm-12 {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 552px) {
+	.tab-content {
+		margin: 0rem !important;
+	}
+
+	.card-pricisig .row .col-lg-4,
+	.card-pricisig .row .col-md-6,
+	.card-pricisig .row .col-sm-12 {
+		width: 100% !important;
+	}
+}

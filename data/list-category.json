@@ -1,0 +1,62 @@
+{
+     "status_code": 200,
+     "found": true,
+     "message": "",
+     "data": [
+        {
+          "category_id" : 1,
+          "category_name" : "Fashion Ikhwan"
+        },
+        {
+          "category_id" : 2,
+          "category_name" : "Fashion Akhwat"
+        },
+        {
+          "category_id" : 3,
+          "category_name" : "Buku Ikhwan"
+        },
+        {
+          "category_id" : 4,
+          "category_name" : "Buku Akhwat"
+        },
+        {
+          "category_id" : 5,
+          "category_name" : "Herbal Ikhwan"
+        },
+        {
+          "category_id" : 6,
+          "category_name" : "Herbal Akhwat"
+        },  {
+          "category_id" : 7,
+          "category_name" : "Sepatu Ikhwan"
+        },
+        {
+          "category_id" : 8,
+          "category_name" : "Sepatu Akhwat"
+        },
+        {
+          "category_id" : 9,
+          "category_name" : "Tas Ikhwan"
+        },
+        {
+          "category_id" : 10,
+          "category_name" : "Tas Akhwat"
+        },
+        {
+          "category_id" : 11,
+          "category_name" : "Peci Ikhwan"
+        },
+        {
+          "category_id" : 12,
+          "category_name" : "Kerudung Akhwat"
+        },
+        {
+          "category_id" : 13,
+          "category_name" : "Kacamata Ikhwan"
+        },
+        {
+          "category_id" : 14,
+          "category_name" : "Kacamata Akhwat"
+        }
+      ]
+}

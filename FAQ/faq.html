@@ -1,0 +1,995 @@
+<!doctype html>
+<html lang="en">
+
+     <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta name="author" content="Bargros Team">
+          <meta name="keywords" content="Bargros, bargros, grosir, Grosir, Barang Grosir, barang grosir">
+          <meta name="description" content="Situs Jual Beli Barang Grosir Online Terlengkap Dan Terpercaya">
+          <meta name="color-scheme" content="primary-color">
+          <meta name="robots" content="index">
+
+          <!-- Bootstrap CSS -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+               integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+               crossorigin="anonymous">
+          <link rel="shortcut icon" href="../assets/favicon.png" sizes="32x32" type="image/png">
+          <link href="../assets/fontawesome5/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+          <!--load all styles -->
+
+          <link href="../style.css" rel="stylesheet">
+          <title>Bargros.id</title>
+     </head>
+
+     <body id="rootArea">
+
+          <!-- loader  -->
+          <div class="parent-loader d-none">
+               <div class="container">
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+               </div>
+               <h2 class="animate-text-loader">Loading</h2>
+          </div>
+
+
+          <!-- SECTION NAVBAR -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+               <div class="container-fluid ">
+                    <!-- LOGO BRAND -->
+                    <div class="navbar-wrapper">
+                         <div class="navbar-wrapper-content">
+
+                              <div class="brand-app">
+                                   <a class="navbar-brand" href="index.html">
+                                        <!-- <b> Bargros.id</b> -->
+                                        <img src="../assets/bargros-logo-small.png"
+                                             class="d-inline-block align-text-top navbar-bargros-logo">
+                                   </a>
+                              </div>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                   aria-expanded="false" aria-label="Toggle navigation">
+                                   <span class="navbar-toggler-icon"></span>
+                              </button>
+
+                         </div>
+                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav ">
+                                   <form class="d-flex">
+                                        <div class="input-group ">
+                                             <input type="search" class="form-control" id="search" name="search"
+                                                  placeholder="Cari starp masker" aria-label="Cari starp masker"
+                                                  aria-describedby="basic-addon1">
+                                             <span class="input-group-text" id="basic-addon1">
+                                                  <button type="submit" class="submit-search">
+                                                       <i class="fas fa-search"></i>
+                                                  </button>
+                                             </span>
+                                        </div>
+                                   </form>
+
+
+                                   <!-- icons navbar  -->
+                                   <div class="navbar_icon_kategori">
+                                        <div class="navbar-icon ">
+                                             <div class="icon-keranjang">
+                                                  <i class="fas fa-shopping-cart"></i>
+                                             </div>
+                                        </div>
+
+                                        <div class="dropdown">
+                                             <div
+                                                  class="toggle-btn-kategori d-flex justify-content-center align-items-center">
+
+                                                  <i class="fas fa-bars"
+                                                       style="font-size: 11px; line-height: 13px;"></i>
+                                                  <button class="dropbtn">Kategory</button>
+                                             </div>
+                                             <div class="dropdown-content">
+                                                  <div class="row">
+                                                       <!-- list kategory -->
+                                                       <div class="col-4">
+                                                            <div class="list-menu-kategori">
+                                                                 <!-- DRAWWING LIST CATEGORI IN JAVASCRIPT -->
+                                                            </div>
+                                                       </div>
+                                                       <!-- KONTENT KATEGORI -->
+                                                       <div class="col-8">
+                                                            <div class="content-menu-kategori">
+                                                                 <div class="kategori-info">
+                                                                      <div class="kategori-info-title">
+                                                                           <h4></h4>
+                                                                      </div>
+                                                                      <button type="button" class="btn-close"
+                                                                           aria-label="Close"></button>
+                                                                 </div>
+
+                                                                 <div class="list-menu-kategori-info mt-3">
+                                                                      <!-- DRAWWING-LIST-SUB CATEGORI IN JAVASCRIPT -->
+                                                                      <div class="subcategory">
+
+                                                                      </div>
+                                                                      <div class="subsubcategory">
+
+                                                                      </div>
+                                                                 </div>
+
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <!-- end parent  -->
+                                   </div>
+
+
+
+                                   <div class="separator-right"></div>
+                                   <div class="menu-user d-flex justify-content-around align-items-center">
+                                        <!-- KETIKA USER SUDAH LOGIN SHOW 2 MENU INI START -->
+                                        <div class="nama-toko ">
+                                             <i class="fas fa-tachometer-alt"></i>
+                                             <span class="nama-toko-title">
+                                                  Dashboard
+                                             </span>
+                                        </div>
+
+                                        <li class="nav-item dropdown">
+                                             <a class="nav-link dropdown-toggle" href="#"
+                                                  id="navbarDarkDropdownMenuLink" role="button"
+                                                  data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="fas fa-user"></i>
+
+                                                  IJlal Naufal Hibrizi
+                                             </a>
+                                             <ul class="dropdown-menu dropdown-menu-dark"
+                                                  aria-labelledby="navbarDarkDropdownMenuLink">
+                                                  <li><a class="dropdown-item" href="index.html">Profile Saya</a></li>
+                                                  <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                                             </ul>
+                                        </li>
+                                        <!-- KETIKA USER SUDAH LOGIN SHOW 2 MENU INI END -->
+
+                                        <!-- KETIKA USER BLUM LOGIN SHOW 2 BUTTON INI START -->
+                                        <div class="btn-login me-2 d-none">
+                                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                  data-bs-target="#modalLogin">
+                                                  Masuk
+                                             </button>
+
+                                             <!-- Modal -->
+                                             <div class="modal fade" id="modalLogin" tabindex="-1"
+                                                  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                       <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                 <h5 class="modal-title" id="exampleModalLabel">Masuk Ke
+                                                                      Akun Kamu </h5>
+                                                                 <button type="button" class="btn-close"
+                                                                      data-bs-dismiss="modal"
+                                                                      aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                 <form class="w-100">
+                                                                      <div class="mb-3">
+                                                                           <input type="email" class="form-control"
+                                                                                id="exampleInputEmail1"
+                                                                                aria-describedby="emailHelp"
+                                                                                placeholder="Email">
+                                                                      </div>
+                                                                      <div class="mb-3">
+                                                                           <input type="password"
+                                                                                aria-describedby="passwordHelp"
+                                                                                class="form-control"
+                                                                                id="exampleInputPassword1"
+                                                                                placeholder="Password">
+                                                                           <div
+                                                                                class="input-info mt-1 d-flex justify-content-between align-items-center w-100">
+                                                                                <div class="lupa-kata-sandi">
+                                                                                     <small>Lupa Kata Sandi </small>
+                                                                                     <a href="index.html">Klik
+                                                                                          Disini</a>
+                                                                                </div>
+                                                                                <div class="aktivasi-akun">
+                                                                                     <small>Aktivasi Akun </small>
+                                                                                     <a href="index.html">Klik
+                                                                                          Disini</a>
+                                                                                </div>
+                                                                           </div>
+                                                                      </div>
+                                                                      <button type="submit"
+                                                                           class="btn btn-primary">Masuk</button>
+                                                                 </form>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                 <small>Belum Punya Akun</small>
+                                                                 <button type="button" class="btn btn-primary"
+                                                                      data-bs-toggle="modal"
+                                                                      data-bs-target="#modalRegister">
+                                                                      Silahkan Daftar
+                                                                 </button>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+
+                                        <!-- register  -->
+                                        <div class="btn-register d-none">
+
+                                             <!-- Button trigger modal -->
+                                             <button type="button" class="btn btn-outline-success"
+                                                  data-bs-toggle="modal" data-bs-target="#modalRegister">
+                                                  Daftar
+                                             </button>
+
+                                             <!-- Modal -->
+                                             <div class="modal fade" id="modalRegister" tabindex="-1"
+                                                  aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                  <div class="modal-dialog">
+                                                       <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                 <h5 class="modal-title" id="exampleModalLabel">Daftar
+                                                                      Akun Baru Sekarang </h5>
+                                                                 <button type="button" class="btn-close"
+                                                                      data-bs-dismiss="modal"
+                                                                      aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                 <form class="w-100">
+                                                                      <div class="mb-3">
+                                                                           <input type="email" class="form-control"
+                                                                                id="exampleInputEmail1"
+                                                                                aria-describedby="emailHelp"
+                                                                                placeholder="Email">
+                                                                      </div>
+                                                                      <div class=" mb-3">
+                                                                           <input id="exampleInputNomorTelepon"
+                                                                                type="number" class="form-control"
+                                                                                placeholder="Nomor Telepon"
+                                                                                aria-label="Nomor Telepon"
+                                                                                aria-describedby="basic-addon1">
+                                                                      </div>
+                                                                      <div class="mb-3">
+                                                                           <input type="password"
+                                                                                aria-describedby="passwordHelp"
+                                                                                class="form-control" id="password"
+                                                                                placeholder="Password">
+                                                                      </div>
+                                                                      <div class="mb-3">
+                                                                           <input type="password"
+                                                                                aria-describedby="passwordHelp"
+                                                                                class="form-control"
+                                                                                id="confirm-password"
+                                                                                placeholder="Confirm Password">
+                                                                      </div>
+                                                                      <button type="submit"
+                                                                           class="btn btn-primary">Daftar</button>
+                                                                 </form>
+                                                            </div>
+                                                            <div class="modal-footer">
+
+                                                                 <small>Sudah Punya Akun</small>
+                                                                 <button type="button" class="btn btn-primary"
+                                                                      data-bs-toggle="modal"
+                                                                      data-bs-target="#modalLogin">
+                                                                      Login Disini
+                                                                 </button>
+
+
+                                                                 <div class="syarat-ketentuan">
+                                                                      <small>Dengan mendaftar, Saya menyetujui <a
+                                                                                href="index.html"
+                                                                                class="aturan-pengunaan">
+                                                                                Aturan Pengunaan</a> dan <a
+                                                                                href="index.html"
+                                                                                class="kebijakan-privasi">Kebijakan
+                                                                                Privasi</a></small>
+
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+
+                                        </div>
+
+
+                                        <!-- KETIKA USER BLUM LOGIN SHOW 2 BUTTON INI END  -->
+                                   </div>
+
+
+                              </ul>
+                         </div>
+                    </div>
+               </div>
+          </nav>
+          <main>
+               <section class="mt-5" id="faq">
+                    <div class="container-fluid">
+
+                         <div class="row align-items-start sidebar">
+                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                   <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                        aria-orientation="vertical">
+                                        <button class="nav-link active" id="bagaimana-saya-mendaftar-di-bargrosid-tab"
+                                             data-bs-toggle="pill"
+                                             data-bs-target="#bagaimana-saya-mendaftar-di-bargrosid" type="button"
+                                             role="tab" aria-controls="bagaimana-saya-mendaftar-di-bargrosid"
+                                             aria-selected="true">Cara mendaftar di
+                                             Bargros.id</button>
+                                        <button class="nav-link" id="faq-rebrand-tab" data-bs-toggle="pill"
+                                             data-bs-target="#faq-rebrand" type="button" role="tab"
+                                             aria-controls="faq-rebrand" aria-selected="false">Cara mendaftar
+                                             Rebrand di Bargros.id </button>
+                                        <button class="nav-link" id="bagaimana-caranya-membuat-pesanan-tab"
+                                             data-bs-toggle="pill" data-bs-target="#bagaimana-caranya-membuat-pesanan"
+                                             type="button" role="tab" aria-controls="bagaimana-caranya-membuat-pesanan"
+                                             aria-selected="false"> Cara Membuat Pesanan di
+                                             Bargros.id</button>
+                                        <button class="nav-link" id="bagaimana-caranya-konfirmasi-pembayaran-tab"
+                                             data-bs-toggle="pill"
+                                             data-bs-target="#bagaimana-caranya-konfirmasi-pembayaran" type="button"
+                                             role="tab" aria-controls="bagaimana-caranya-konfirmasi-pembayaran"
+                                             aria-selected="false"> Cara konfirmasi pembayaran</button>
+                                        <button class="nav-link"
+                                             id="bagaimana-jika-saya-ingin-menggunakan-resi-dari-marketplace-tab"
+                                             data-bs-toggle="pill"
+                                             data-bs-target="#bagaimana-jika-saya-ingin-menggunakan-resi-dari-marketplace"
+                                             type="button" role="tab"
+                                             aria-controls="bagaimana-jika-saya-ingin-menggunakan-resi-dari-marketplace"
+                                             aria-selected="false">Cara menggunakan resi dari
+                                             marketplace</button>
+                                        <button class="nav-link"
+                                             id="bagaimana-jika-ingin-mengubah-pesanan-dari-terima-sampai-selesai-tab"
+                                             data-bs-toggle="pill"
+                                             data-bs-target="#bagaimana-jika-ingin-mengubah-pesanan-dari-terima-sampai-selesai"
+                                             type="button" role="tab"
+                                             aria-controls="bagaimana-jika-ingin-mengubah-pesanan-dari-terima-sampai-selesai"
+                                             aria-selected="false">Cara mengubah status pesanan
+                                             dari terima hingga selesai</button>
+                                        <button class="nav-link" id="bagaimana-caranya-order-maklone-tab"
+                                             data-bs-toggle="pill" data-bs-target="#bagaimana-caranya-order-maklone"
+                                             type="button" role="tab" aria-controls="bagaimana-caranya-order-maklone"
+                                             aria-selected="false"> Cara order maklon</button>
+
+
+                                   </div>
+                              </div>
+                              <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12">
+
+                                   <div class="tab-content" id="v-pills-tabContent">
+
+                                        <!-- PERTAMA -->
+                                        <div class="tab-pane fade show active"
+                                             id="bagaimana-saya-mendaftar-di-bargrosid" role="tabpanel"
+                                             aria-labelledby="bagaimana-saya-mendaftar-di-bargrosid-tab">
+
+                                             <div class="content-faq">
+                                                  <h2>Bagaimana saya mendaftar di bargros.id </h2>
+                                                  <p>Untuk mendaftar di bargros.id cara nya mudah sekali, ikuti
+                                                       langkah-langkah berikut </p>
+
+                                                  <ul>
+                                                       <li>Buka link <a href="https://bargros.id/">bargros.id</a></li>
+                                                       <li>Pada halaman utama Bargros.id</li>
+                                                       <li> klik tombol <b>Masuk</b> di pojok kanan atas</li>
+                                                       <li>Jika anda membuka di <b>Mobile/Handphone</b> silahkan liat
+                                                            menu di
+                                                            kanan atas, lalu klik, setelah itu klik tombol
+                                                            <b>Masuk</b>
+                                                       </li>
+                                                  </ul>
+                                                  <img src="dekstop-home.png" class="img-fluid" alt="dekstop-mode">
+
+                                                  <ul>
+
+                                                       <li>Lalu akan muncul popup seperti ini</li>
+                                                       <li>Klik link <b>Silahkan Daftar</b> </li>
+                                                  </ul>
+                                                  <img src="popup.png" class="img-fluid" alt=" popup" />
+                                                  <ul>
+
+                                                       <li>Jika sudah anda akan masuk ke halaman <b>Registrasi</b>
+                                                            Bargros.id
+                                                       </li>
+                                                       <li>Lengkapi data diri anda
+                                                       </li>
+                                                       <li>Pilih paket sesuai kebutuhan anda</li>
+                                                       <li>klik tombol <b>Submit</b></li>
+                                                  </ul>
+                                                  <img src="registrasi.png" class="img-fluid" alt="registrasi">
+                                                  <ul>
+
+                                                       <li>Ketika berhasil registrasi, akan ada popup muncul seperti ini
+                                                       </li>
+                                                       <li>Silahkan baca terlebih dahulu popup yg muncul</li>
+                                                       <li>Ketika berhasil silahkan klik <b>Tombol OK</b> </li>
+                                                  </ul>
+                                                  <img src="sukses-register.png" class="img-fluid"
+                                                       alt="sukses-register.png">
+                                                  <ul>
+
+                                                       <li>Lalu cek notifikasi email yg anda gunakan ketika register
+                                                       </li>
+                                                  </ul>
+                                                  <img src="gmail-verifikasi-akun.png" class="img-fluid"
+                                                       alt="gmail-verifikasi-akun">
+                                                  <ul>
+                                                       <li>Klik Tombol <b>Verifikasi Akun</b></li>
+                                                  </ul>
+                                                  <img src="sukses-aktifasi-akun.png" class="img-fluid"
+                                                       alt="sukses-aktifasi-akun.png">
+
+                                                  <ul>
+                                                       <li>Yeayy akun anda berhasil di daftarkan</li>
+                                                       <li>Silahkan login menggunakan akun yg baru saja anda daftarkan
+                                                       </li>
+                                                  </ul>
+                                             </div>
+                                        </div>
+
+                                        <!-- KEDUA -->
+                                        <div class="tab-pane fade" id="faq-rebrand" role="tabpanel"
+                                             aria-labelledby="faq-rebrand-tab">
+                                             <div class="content">
+                                                  <h2>Bagaimana caranya saya mendaftar sebagai Rebrand</h2>
+                                                  <ul>
+                                                       <li>Pilih paket sebagai <b>Rebrand</b></li>
+                                                       <li>Silahkan pilih <b>Periode</b> sesuai kebutuhan anda</li>
+                                                       <li>Akan ada informasi <b>Harga</b> sesuai <b>Paket &
+                                                                 Periode</b> yg
+                                                            sudah anda tentukan </li>
+                                                       <li>Klik tombol <b>Submit</b></li>
+                                                  </ul>
+                                                  <img src="rebrand-form.png" class="img-fluid" alt="rebrand-form">
+                                                  <ul>
+                                                       <li>Ketika sudah klik tombol submit, anda akan menerima
+                                                            notifikasi email seperti ini</li>
+                                                       <li>Klik tombol <b>Verifikasi Akun</b></li>
+                                                  </ul>
+                                                  <img src="gmail-verifikasi-akun.png" class="img-fluid"
+                                                       alt="gmail-verifikasi-akun.png">
+                                                  <ul>
+
+                                                       <li>Ketika sudah di verifikasi, maka anda akan menerima
+                                                            <b>Popup</b> pesan seperti ini
+                                                       </li>
+                                                       <li>Silahkan baca terlebih dahulu popup yg muncul</li>
+                                                       <li>Ketika berhasil silahkan klik <b>Tombol OK</b> </li>
+                                                  </ul>
+                                                  <img src="sukses-aktifasi-akun.png" class="img-fluid"
+                                                       alt="sukses-aktifasi-akun.png">
+                                                  <ul>
+
+                                                       <li>Anda akan aktif sebagai <b>Free Trial</b> selama <b>14
+                                                                 hari</b>
+                                                       </li>
+                                                       <li>Silahkan login dengan akun yg sudah di daftarkan di
+                                                            Bargros.id
+                                                       </li>
+                                                       <li>Ketika sudah login, silahkan cek kembali email untuk melihat
+                                                            <b>Invoice</b> anda
+                                                       </li>
+
+                                                  </ul>
+
+                                                  <img src="invoice.png" class="img-fluid" alt="invoice">
+                                                  <ul>
+                                                       <li>Klik link <b>Konfirmasi</b> atau bisa melalui email
+                                                            <b>billing@bargros.id</b>
+                                                       </li>
+                                                       <li>Anda akan masuk ke halaman pembayaran invoice</li>
+                                                       <li>Lengkapi formulir dan sesuaikan data invoice yg sudah dikirim
+                                                            kan ke email
+                                                            sebelumnya</li>
+                                                       <li>Jika sudah, Klik tombol <b>Kirim Bukti Pembayaran</b></li>
+                                                  </ul>
+                                                  <img src="pembayaran-invoice.png" class="img-fluid"
+                                                       alt="pembayaran-invoice">
+                                                  <ul>
+
+                                                       <li>Akan ada popup seperti ini ketika anda sudah berhasil
+                                                            melakukan pembayaran</li>
+                                                       <li>Tunggu Admin Bargros.id untuk melakukan prosess pengecekan
+                                                       </li>
+                                                  </ul>
+                                                  <img src="konfirmasi-pembayaran.png" class="img-fluid"
+                                                       alt="konfirmasi-pembayaran.png">
+                                                  <ul>
+                                                       <li>
+                                                            Jika anda menerima email konfirmasi user aktif, seperti
+                                                            dibawah ini maka anda sudah terdaftar sebagai Membership
+                                                            <b>Rebrand</b>
+                                                       </li>
+                                                  </ul>
+                                                  <img src="client-aktif.png" class="img-fluid" alt="client-aktif.png">
+                                             </div>
+                                        </div>
+
+                                        <!-- bagaimanacaranya konfirmasi pembayaran -->
+                                        <div class="tab-pane fade" id="bagaimana-caranya-konfirmasi-pembayaran"
+                                             role="tabpanel"
+                                             aria-labelledby="bagaimana-caranya-konfirmasi-pembayaran-tab">
+                                             <div class="content">
+                                                  <h2>Bagaimana caranya konfirmasi pembayaran</h2>
+                                                  <ul>
+                                                       <li>Jika anda sudah melakukan order di <b>Bargros.id</b></li>
+                                                       <li>Anda akan di arahkan ke halaman konfirmasi pembayaran</li>
+                                                       <li>Klik tombol <b>Konfirmasi Pembayaran</b></li>
+                                                  </ul>
+                                                  <img src="berhasil-belanja.png" alt="berhasil-belanja"
+                                                       class="img-fluid" />
+                                                  <ul>
+                                                       <li>Anda juga bisa melakukan <b>Konfirmasi Pembayaran</b> melalui
+                                                            <b>Email</b> yg sudah anda daftarkan di <b>Bargros.id</b>
+                                                            ketika anda sudah melakukan <b>Order</b> otomatis email anda
+                                                            akan dikirim kan ringkasan pesanan yg sudah anda beli,
+                                                            contoh seperti ini
+                                                       </li>
+
+                                                  </ul>
+                                                  <img src="menunggu-pembayaran.png" class="img-fluid"
+                                                       alt="menunggu-pembayaran.png">
+                                                  <ul>
+                                                       <li>Anda bisa langsung klik tombol <b>Konfirmasi Pembayaran </b>
+                                                       </li>
+                                                       <li>Lalu anda akan di arahkan ke halaman konfirmasi
+                                                            pembayaran
+                                                       </li>
+                                                       <li>Lengkapi formulir</li>
+                                                       <li>Klik tombol <b>Konfirmasi Pembayaran</b></li>
+                                                  </ul>
+                                                  <img src="konfirmasi-payment.png" alt="konfirmasi-payment"
+                                                       class="img-fluid" />
+                                                  <ul>
+                                                       <li>Anda akan di arahkan ke halaman pembayaran selesai</li>
+                                                       <li>Pesanan anda sedang dalam proses <b>Pengecekan</b></li>
+                                                  </ul>
+                                                  <img src="pembayaran-selesai.png" class="img-fluid"
+                                                       alt="pembayaran-selesai.png">
+                                             </div>
+                                        </div>
+
+                                        <!-- KETIKA -->
+                                        <div class="tab-pane fade" id="bagaimana-caranya-membuat-pesanan"
+                                             role="tabpanel" aria-labelledby="bagaimana-caranya-membuat-pesanan-tab">
+                                             <div class="content">
+                                                  <h2>Bagaimana caranya membuat pesanan di Bargros.id</h2>
+                                                  <ul>
+                                                       <li>Buka link <a href="https://bargros.id/">bargros.id</a></li>
+                                                       <li>Pastikan anda sudah daftar/registrasi akun di
+                                                            <b>Bargros.id</b>
+                                                       </li>
+                                                       <li>Pilih atau klik salah satu produk yang ingin anda pesan,</li>
+                                                       <li>Ketika sudah, anda akan di arahkan ke dalam detail produk
+                                                       </li>
+                                                       <li>Tentukan <b>Variant</b> produk</li>
+                                                       <li>Tentukan <b>Jumlah Produk</b></li>
+                                                       <li>Klik tombol <b>Beli Sekarang</b></li>
+                                                  </ul>
+                                                  <img src="produk-detail.png" class="img-fluid" alt="produk-detail">
+                                                  <ul>
+                                                       <li>Setelah itu, anda akan di arahkan ke halaman informasi
+                                                            penerima produk
+                                                       </li>
+                                                       <li>Silahkan klik Tombol <b>Pilih Alamat Penerima</b>
+                                                       </li>
+
+                                                  </ul>
+                                                  <img src="detail-pengiriman.png" class="img-fluid"
+                                                       alt="detail-pengiriman">
+
+                                                  <ul>
+
+                                                       <li>Setelah itu akan ada popup seperti ini</li>
+                                                       <li>Lalu klik tombol <b>+ Alamat Baru</b></li>
+                                                  </ul>
+                                                  <img src="popup-set-alamat.png" class="img-fluid"
+                                                       alt="popup-set-alamat.png">
+                                                  <ul>
+                                                       <li>Lengkapi Formulir yang di butuhkan</li>
+                                                  </ul>
+                                                  <img src="formulir-set-alamat.png" class="img-fluid"
+                                                       alt="formulir-set-alamat.png">
+                                                  <ul>
+                                                       <li>Klik tombol <b>Simpan</b></li>
+                                                       <li>Periksa kembali alamat yg baru saja di tambahkan</li>
+                                                  </ul>
+                                                  <img src="periksa-kembali-alamat.png" alt="periksa-kembali-alamat"
+                                                       class="img-fluid" />
+                                                  <ul>
+                                                       <li>Anda bisa memberikan <b>Catatan</b> lain di sini</li>
+                                                  </ul>
+                                                  <img src="catatan.png" class="img-fluid" alt="catatan.png">
+                                                  <ul>
+                                                       <li>Cek kembali detail order anda</li>
+                                                       <li>Pilih Kurir</li>
+                                                       <li>Pilih Service</li>
+                                                       <li>Pilih Metode Pembayaran</li>
+                                                       <li>Klik tombol <b>Checkout</b></li>
+                                                  </ul>
+                                                  <img src="detail-order.png" class="img-fluid" alt="detail-order.png">
+                                                  <ul>
+                                                       <li>Berhasil Checkout</li>
+                                                  </ul>
+                                                  <img src="checkout-sukses.png" class="img-fluid"
+                                                       alt="checkout-sukses.png">
+                                                  <ul>
+                                                       <li>Anda akan di arahkan ke halaman ringkasan pesanan</li>
+                                                       <li>Jika sudah sesuai</li>
+                                                       <li>Klik tombol <b>Konfirmasi Pembayaran</b></li>
+                                                  </ul>
+                                                  <img src="berhasil-belanja.png" alt="berhasil-belanja"
+                                                       class="img-fluid" />
+                                                  <ul>
+                                                       <li>Lalu anda akan di arahkan ke halaman konfirmasi
+                                                            pembayaran
+                                                       </li>
+                                                       <li>Lengkapi formulir</li>
+                                                       <li>Klik tombol <b>Konfirmasi Pembayaran</b></li>
+                                                  </ul>
+                                                  <img src="konfirmasi-payment.png" alt="konfirmasi-payment"
+                                                       class="img-fluid" />
+                                                  <ul>
+                                                       <li>Anda akan di arahkan ke halaman pembayaran selesai</li>
+                                                       <li>Pesanan anda sedang dalam proses <b>Pengecekan</b></li>
+                                                  </ul>
+                                                  <img src="pembayaran-selesai.png" class="img-fluid"
+                                                       alt="pembayaran-selesai.png">
+
+
+                                             </div>
+
+                                        </div>
+
+                                        <!-- KEEMPAT -->
+                                        <div class="tab-pane fade"
+                                             id="bagaimana-jika-saya-ingin-menggunakan-resi-dari-marketplace"
+                                             role="tabpanel"
+                                             aria-labelledby="bagaimana-jika-saya-ingin-menggunakan-resi-dari-marketplace-tab">
+
+                                             <div class="content">
+                                                  <h2>Bagaimana jika saya ingin menggunakan resi dari marketplace</h2>
+                                                  <ul>
+                                                       <li>Buka link <a href="https://bargros.id/">bargros.id</a></li>
+                                                       <li>Pastikan anda sudah daftar/registrasi akun di
+                                                            <b>Bargros.id</b>
+                                                       </li>
+                                                       <li>Pilih atau klik salah satu produk yang ingin anda pesan,</li>
+                                                       <li>Ketika sudah, anda akan di arahkan ke dalam detail produk
+                                                       </li>
+                                                       <li>Tentukan <b>Variant</b> produk(Jika ada)</li>
+                                                       <li>Tentukan <b>Jumlah Produk</b></li>
+                                                       <li>Klik tombol <b>Beli Sekarang</b></li>
+                                                  </ul>
+                                                  <img src="produk-detail.png" class="img-fluid" alt="produk-detail">
+                                                  <ul>
+                                                       <li>Setelah itu, anda akan di arahkan ke halaman informasi
+                                                            penerima produk
+                                                       </li>
+                                                       <li>Klik checkbox <b>Gunakan Resi Marketplace</b></li>
+                                                  </ul>
+                                                  <img src="klik-checkbouk-gunakan-resi-marketplace.png"
+                                                       class="img-fluid"
+                                                       alt="klik-checkbouk-gunakan-resi-marketplace.png">
+                                                  <ul>
+                                                       <li>Maka akan muncul formulir seperti ini</li>
+                                                       <li>Lengkapi formulir</li>
+                                                       <li>Klik tombol <b>Metode Pembayaran</b></li>
+                                                       <li>Klik tombol <b>Checkout</b>, selesai</li>
+                                                       <li>Anda akan di arahkan ke halaman ringkasan pesanan,cek kembali
+                                                            ringkasan pesanan nya, jika sudah klik tombol <b>Konfirmasi
+                                                                 Pembayaran</b></li>
+                                                  </ul>
+                                                  <img src="formulir-resi-marketplaces.png
+                                                  " class="img-fluid" alt="formulir-resi-marketplaces.png
+                                                       ">
+
+                                                  <ul>
+                                                       <li>Lalu anda akan di arahkan ke halaman ringkasan pesanan
+                                                       </li>
+                                                       <li>Klik tombol <b>Konfirmasi Pembayaran </b></li>
+                                                  </ul>
+
+                                                  <img src="resi-marketplace-suksess.png" class="img-fluid"
+                                                       alt="resi-marketplace-suksess.png">
+                                                  <ul>
+                                                       <li>Lalu anda akan di arahkan ke halaman konfirmasi
+                                                            pembayaran
+                                                       </li>
+                                                       <li>Lengkapi formulir</li>
+                                                       <li>Klik tombol <b>Konfirmasi Pembayaran</b></li>
+                                                  </ul>
+                                                  <img src="konfirmasi-payment.png" alt="konfirmasi-payment"
+                                                       class="img-fluid" />
+                                                  <ul>
+                                                       <li>Anda akan di arahkan ke halaman pembayaran selesai</li>
+                                                       <li>Pesanan anda sedang dalam proses <b>Pengecekan</b></li>
+                                                  </ul>
+                                                  <img src="pembayaran-selesai.png" class="img-fluid"
+                                                       alt="pembayaran-selesai.png">
+
+                                             </div>
+                                        </div>
+                                        <!-- KE LIMA -->
+                                        <div class="tab-pane fade"
+                                             id="bagaimana-jika-ingin-mengubah-pesanan-dari-terima-sampai-selesai"
+                                             role="tabpanel"
+                                             aria-labelledby="bagaimana-jika-ingin-mengubah-pesanan-dari-terima-sampai-selesai-tab">
+                                             <div class="content">
+                                                  <h2>Bagaimana jika ingin mengubah status pesanan dari terima sampai
+                                                       selesai </h2>
+                                                  <ul>
+                                                       <li>Buka link <a href="https://bargros.id/">bargros.id</a></li>
+                                                       <li>Silahkan login menggunakan akun yg sudah anda daftar kan di
+                                                            <b>Bargros.id</b>
+                                                       </li>
+                                                       <li>Klik Menu <b>Dashboard</b></li>
+                                                  </ul>
+                                                  <img src="klik-dashboard.png" class="img-fluid" alt="klik-dashboard">
+                                                  <ul>
+                                                       <li>Setelah itu anda akan di arahkan ke Dashboard
+                                                            <b>Bargros.id</b>
+                                                       </li>
+                                                       <li>Setelah itu anda bisa klik tombol <b>More Info</b></li>
+
+                                                  </ul>
+                                                  <img src="dashboard.png" class="img-fluid" alt="dashboard.png">
+
+                                                  <ul>
+
+                                                       <li>Maka akan ada beberapa info produk yang perlu anda verifikasi
+                                                       </li>
+                                                       <li>Klik tombol <b>Verifikasi</b> untuk memverifikasi produk
+                                                            kepada pembeli</li>
+                                                  </ul>
+                                                  <img src="verifikasi-produk.png" alt="verifikasi-produk"
+                                                       class="img-fluid" />
+                                                  <ul>
+                                                       <li>Maka akan ada popup seperti ini</li>
+                                                       <li>Lalu klik tombol <b>Ya,Lakukanlah</b></li>
+                                                  </ul>
+                                                  <img src="verifikasi-popup.png" alt="verifikasi-popup"
+                                                       class="img-fluid" />
+                                                  <ul>
+                                                       <li>Akan ada popup konfirmasi sukses di verifikasi</li>
+                                                  </ul>
+                                                  <img src="suksess-verifikasi.png" alt="suksess-verifikasi.png"
+                                                       class="img-fluid" />
+                                                  <ul>
+                                                       <li>Setelah itu otomatis anda akan di bawa ke tab <b>Perlu
+                                                                 Dikirim</b></li>
+                                                       <li>Anda bisa klik tombol <b>Tandai Dikirim</b> untuk mengirim
+                                                            informasi bahwa barang sudah dikirim dari penjual ke pembeli
+                                                       </li>
+                                                  </ul>
+                                                  <img src="perlu-dikirim.png" class="img-fluid" alt="perlu-dikirim" />
+                                                  <ul>
+                                                       <li>anda akan di arahkan ke tab <b>Dikirim</b> </li>
+                                                       <li>Setelah itu anda tingal menunggu bahwa barang sudah sampai ke
+                                                            penjual </li>
+                                                  </ul>
+                                                  <img src="dikirim.png" alt="dikirm" class="img-fluid" />
+                                                  <ul>
+                                                       <li>Yang perlu di <b>Perhatikan</b> adalah anda bisa cek beberapa
+                                                            info tombol di bawah ini untuk melihat beberapa info yg
+                                                            mungkin bisa membantu anda </li>
+                                                  </ul>
+                                                  <img src="tab-dashboard-verifikasi.png"
+                                                       alt="tab-dashboard-verifikasi.png" class="img-fluid" />
+                                             </div>
+                                        </div>
+                                        <!-- KE ENAM -->
+                                        <div class="tab-pane fade" id="bagaimana-caranya-order-maklone" role="tabpanel"
+                                             aria-labelledby="bagaimana-caranya-order-maklone-tab">
+                                             <div class="content">
+                                                  <h2>Bagaimana caranya order maklon</h2>
+                                                  <p><b>Order Maklon</b> adalah <b>Custom Produk Sendiri</b> dengan
+                                                       MOQ(syarat & ketentuan)<br />
+
+                                                       Anda hanya bisa order <b>Maklon</b> jika produk yg ada di
+                                                       <b>Bargros.id</b> memiliki badge <b>Maklone</b>
+                                                  </p>
+                                                  <ul>
+                                                       <li>Buka link <a href="https://bargros.id/">bargros.id</a></li>
+                                                       <li>Silahkan login menggunakan akun <b>Maklon</b> yg sudah anda
+                                                            daftar kan di
+                                                            <b>Bargros.id</b>
+                                                       </li>
+                                                       <li>Klik Menu <b>Dashboard</b></li>
+                                                  </ul>
+                                                  <img src="klik-dashboard.png" class="img-fluid" alt="klik-dashboard">
+                                                  <ul>
+                                                       <li>Setelah itu anda bisa klik tombol <b>Dropship</b> untuk
+                                                            setting alamat terlebih dahulu</li>
+                                                  </ul>
+                                                  <img src="klik-dropship.png" class="img-fluid"
+                                                       alt="klik-dropship.png">
+                                                  <ul>
+                                                       <li>Setelah di klik tombolnya anda akan di arahkan ke ini</li>
+                                                  </ul>
+                                                  <img src="tambah-alamat-dropship.png" class="img-fluid"
+                                                       alt="tambah-alamat-dropship.png">
+                                                  <ul>
+                                                       <li>Klik tombol <b>Tambah Alamat Dropship</b></li>
+                                                  </ul>
+                                                  <img src="popup-set-alamat-dropship.png" class="img-fluid"
+                                                       alt="popup-set-alamat-dropship.png">
+                                                  <ul>
+                                                       <li>Setelah itu anda bisa lengkapi formulir</li>
+                                                       <li>Jika anda ingin mengatur alamat yg baru anda buat ingin
+                                                            jadikan alamat utama anda bisa klik <b>Jadika ini alamat
+                                                                 utama</b></li>
+                                                       <li>Jika sudah lengkapi formulir, klik tombol <b>Tambah</b></li>
+                                                       <li>Akan ada popup seperti sini</li>
+                                                  </ul>
+                                                  <img src="sukses-menambah-alamat-dropship.png" class="img-fluid"
+                                                       alt="sukses-menambah-alamat-dropship.png">
+
+                                                  <ul>
+                                                       <li>Sekarang kita pindah ke tab <b>Order Maklone</b></li>
+                                                       <li>Anda bisa cari produk <b>Maklon</b> di inputan yg sudah di
+                                                            sediakan, dengan minimal order 200pcs untuk produk
+                                                            <b>Maklone</b>
+                                                       </li>
+                                                       <li>Jika sudah di tentukan produk nya</li>
+                                                       <li>Pilih Kurir</li>
+                                                       <li>Pilih Service</li>
+                                                       <li>Tambahkan Catatan/Notes yg sudah disediakan jika perlu</li>
+                                                  </ul>
+
+                                                  <img src="mulai-order-maklon.png" class="img-fluid"
+                                                       alt="mulai-order-maklon.png">
+                                                  <ul>
+
+                                                       <li>Setelah itu lengkapi kebutuhan order lainnya</li>
+
+                                                  </ul>
+                                                  <img src="end-order-maklon.png" class="img-fluid"
+                                                       alt="end-order-maklon.png">
+                                                  <ul>
+                                                       <li>Ketika sudah anda bisa klik tombol <b>Simpan Order</b></li>
+                                                       <li>Order <b>Maklon</b> Berhasil</li>
+
+                                                  </ul>
+                                                  <img src="suksess-order-maklon.png" alt="sukses order maklon"
+                                                       class="img-fluid" />
+                                                  <ul>
+                                                       <li>Setelah itu cek kembali order <b>Maklon</b> anda </li>
+                                                       <li>Jika sudah benar, anda bisa klik tombol <b>Bayar</b> </li>
+                                                  </ul>
+                                                  <img src="klik-bayar-maklone.png" alt="bayar maklon"
+                                                       class="img-fluid" />
+                                                  <ul>
+                                                       <li>Akan muncul popup seperti ini</li>
+                                                       <li>Lengkapi formulir</li>
+                                                       <li>Klik <b>Buat Pembayaran</b></li>
+                                                  </ul>
+                                                  <img src="form-bayar-maklon.png" alt="popup bayar maklon"
+                                                       class="img-fluid" />
+                                                  <ul>
+                                                       <li>Jika sudah akan akan ada popup seperti ini</li>
+                                                  </ul>
+                                                  <img src="popup-suksess-bayar-maklon.png" alt="popup bayar maklon"
+                                                       class="img-fluid" />
+                                             </div>
+                                             <ul>
+                                                  <li>Pesananmu akan di verifikasi secepatnya oleh <b>Bargros.id</b>
+                                                  </li>
+                                             </ul>
+                                             <img src="tunggu-verifikasi-maklone.png" alt="verifikasi maklon"
+                                                  class="img-fluid" />
+                                        </div>
+
+
+                                   </div>
+                              </div>
+
+               </section>
+          </main>
+          <!-- SECTION FOOTER  -->
+          <footer class="mt-5 p-3">
+               <div class="container-fluid">
+                    <div class="row">
+
+                         <div class="col-xl-4 col-md-4 col-sm-6 col-xs-12  mb-sm-4 ">
+                              <div class="title_content">
+                                   <h5 class="mb-3">Bargros</h5>
+                                   <p>PT Bargros Solusi Usaha<br>
+                                        Sawangan, Kota Depok<br>
+                                        Jawa Barat
+                                   </p>
+                                   <p>
+                                        <strong>Phone: </strong>021 87974636<br>
+                                        <strong>Email: </strong> bargros.id@gmail.com<br>
+                                   </p>
+                              </div>
+                         </div>
+                         <div class="col-xl-4 col-md-4 col-sm-6 col-xs-12 ">
+                              <div class="title_link">
+                                   <h6>Link Terkait</h6>
+                                   <ul>
+                                        <li>
+                                             <a href="#">
+                                                  <i class="fas fa-arrow-right"></i>
+                                                  Home
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a href="#">
+                                                  <i class="fas fa-arrow-right"></i>
+                                                  Tentang Kami
+                                             </a>
+                                        </li>
+
+                                        <li>
+                                             <a href="kebijakan-privasi/kebijakan-privasi.html">
+                                                  <i class="fas fa-arrow-right"></i>
+                                                  Syarat & Ketentuan
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a href="#">
+                                                  <i class="fas fa-arrow-right"></i>
+                                                  Kebijakan Privasi
+                                             </a>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="col-xl-4 col-md-4 col-sm-6 col-xs-12  ">
+                              <div class="title_service">
+                                   <h6>Terhubung Dengan Kami</h6>
+                                   <ul>
+                                        <li>
+                                             <a
+                                                  href="https://www.facebook.com/Bargrosid-113651177884850/ref=pages_you_manage">
+                                                  <i class="fas fa-arrow-right"></i>
+                                                  Facebook
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a href="https://www.instagram.com/bargros.id/">
+                                                  <i class="fas fa-arrow-right"></i>
+                                                  Instagram
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a href="https://www.youtube.com/channel/UCsZq1JRTTaYdnVC_ksx8vLg">
+                                                  <i class="fas fa-arrow-right"></i>
+                                                  Youtube
+                                             </a>
+                                        </li>
+                                        <li>
+                                             <a href="https://www.tiktok.com/@bargros.id">
+                                                  <i class="fas fa-arrow-right"></i>
+                                                  Tiktok
+                                             </a>
+                                        </li>
+                                   </ul>
+                              </div>
+                         </div>
+                         <div class="col-xl-12 col-md-12 col-sm-6 col-xs-12  mb-sm-12 mt-3">
+                              <div class="title_content text-center">
+                                   <small class="mt-2 text-muted" style="font-size: 14px;">© Copy 2022
+                                        Bargros.id</small>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </footer>
+
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+               integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+               crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script src="script.js"></script>
+     </body>
+
+</html>

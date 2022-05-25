@@ -1,0 +1,142 @@
+// NAVBAR BARGROSV2
+#navbar {
+	ul {
+		li {
+			a.nav-link {
+				font-size: 18px;
+				color: black;
+				margin-right: 25px;
+
+				font-weight: 400;
+			}
+
+			.nav-link.btn {
+				width: 166px;
+				border-radius: 50px;
+			}
+		}
+	}
+}
+
+
+@mixin cross($size: 20px, $color: currentColor, $thickness: 1px) {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	position: relative;
+	width: $size;
+	height: $size;
+
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		top: ($size - $thickness) / 2;
+		left: 0;
+		right: 0;
+		height: $thickness;
+		background: $color;
+		border-radius: $thickness;
+	}
+
+	&:before {
+		transform: rotate(45deg);
+	}
+
+	&:after {
+		transform: rotate(-45deg);
+	}
+
+	span {
+		display: block;
+	}
+
+}
+
+#customCloseButton {
+	position: absolute;
+	display: flex;
+	justify-content: end;
+	top: 0;
+	right: 0;
+
+
+	// Example 1.
+	.custom-btn-close {
+		margin: 0;
+		border: 0;
+		padding: 0;
+		background: hsl(216, 100, 50);
+		border-radius: 50%;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: all 150ms;
+
+		.icon-cross {
+			@include cross(20px, #fff, 6px);
+		}
+
+		&:hover,
+		&:focus {
+			transform: rotateZ(90deg);
+			background: hsl(216, 100, 40);
+		}
+
+	}
+
+	// Example 2.
+	.cross-stand-alone {
+		@include cross(40px, #000, 4px);
+	}
+
+
+	// Example 3.
+	.cross-1px {
+		@include cross(80px, #000);
+	}
+
+
+	// Demo styles.
+
+
+
+
+	// For screen readers.
+	.visually-hidden {
+		position: absolute !important;
+		clip: rect(1px, 1px, 1px, 1px);
+		padding: 0 !important;
+		border: 0 !important;
+		height: 1px !important;
+		width: 1px !important;
+		overflow: hidden;
+	}
+
+
+}
+
+@media screen and (max-width: 552px) {
+	.navbar-collapse {
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+		margin-top: 10px;
+		position: absolute;
+		z-index: 1;
+		background: white;
+		top: 0;
+		margin-top: 0px !important;
+		right: 0;
+		padding: 25px;
+		border-radius: 20px 0px 0px 20px;
+	}
+
+	#navbar ul li a.nav-link {
+		margin-right: 0px;
+		margin-top: 5px;
+	}
+}

@@ -1,0 +1,30 @@
+.register#ayo-bergabung {
+	width: 50%;
+	.flex-box-input {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	form {
+		label {
+			text-transform: uppercase;
+			font-weight: 600;
+			width: 17%;
+		}
+		input {
+			width: 100%;
+		}
+		h5 {
+			font-weight: 400;
+			font-size: 18px;
+			text-align: center;
+		}
+		.btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 15%;
+			margin: 0 auto;
+		}
+	}
+}

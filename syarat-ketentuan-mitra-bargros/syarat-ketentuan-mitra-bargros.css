@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+
+section#syarat-dan-ketentuan-mitra-bargros{
+     font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+     font-size: 14px ;
+
+}
+section#syarat-dan-ketentuan-mitra-bargros ol {
+     font-size: 13px;
+
+}
+section#syarat-dan-ketentuan-mitra-bargros ol li {
+     margin-bottom: 5px;
+}

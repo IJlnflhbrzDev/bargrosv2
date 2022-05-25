@@ -206,7 +206,7 @@
 	margin-top: 20px;
 	margin-bottom: 50px;
 	box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
-	border-radius: 10px;
+	border-radius: 20px;
 	overflow: hidden;
 	padding-bottom: 20px;
 }
@@ -229,5 +229,9 @@
 	.card-pricisig .row .col-md-6,
 	.card-pricisig .row .col-sm-12 {
 		width: 100% !important;
+	}
+
+	.pricising-card {
+		margin-bottom: 0px !important;
 	}
 }

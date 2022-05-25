@@ -23,6 +23,11 @@
 	--text-white: white;
 }
 
+.shadow-texts {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+}
+
+
 .custom-badge-heading {
 	margin: 0 auto;
 	width: max-content;
@@ -538,6 +543,11 @@ body {
 }
 
 @media (max-width: 552px) {
+	.card-pricisig p {
+		padding: 0px 20px;
+	}
+
+
 	.content-reverse {
 		flex-direction: column-reverse !important;
 	}
@@ -891,6 +901,7 @@ body {
 		width: 100%;
 
 		h3 {
+
 			margin: 0 auto;
 			width: 250px;
 			text-align: center;

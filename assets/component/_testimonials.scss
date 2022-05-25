@@ -1,6 +1,7 @@
 .testimonials {
      background-color: #E2F6FF;
      padding: 50px 0px;
+     border-radius: 20px;
 
      .carousel-inner {
           position: relative;
@@ -38,6 +39,16 @@
 }
 
 @media screen and (max-width: 552px) {
+     .section-row-content .row-content-body p {
+          padding: 0px 20px;
+          font-size: .875rem !important;
+     }
+
+     .section-row-content .row {
+          width: 100%;
+          margin: 0 auto;
+     }
+
      .pl-sm-0 {
           padding-left: 20px !important;
      }

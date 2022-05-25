@@ -405,7 +405,7 @@
   margin-bottom: 50px;
   -webkit-box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
           box-shadow: rgba(99, 99, 99, 0.5) 0px 2px 8px 0px;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
   padding-bottom: 20px;
 }
@@ -426,6 +426,9 @@
   .card-pricisig .row .col-md-6,
   .card-pricisig .row .col-sm-12 {
     width: 100% !important;
+  }
+  .pricising-card {
+    margin-bottom: 0px !important;
   }
 }
 
@@ -2122,6 +2125,7 @@ article.jasa_barang {
 .testimonials {
   background-color: #E2F6FF;
   padding: 50px 0px;
+  border-radius: 20px;
 }
 
 .testimonials .carousel-inner {
@@ -2154,6 +2158,14 @@ article.jasa_barang {
 }
 
 @media screen and (max-width: 552px) {
+  .section-row-content .row-content-body p {
+    padding: 0px 20px;
+    font-size: .875rem !important;
+  }
+  .section-row-content .row {
+    width: 100%;
+    margin: 0 auto;
+  }
   .pl-sm-0 {
     padding-left: 20px !important;
   }
@@ -2200,6 +2212,11 @@ article.jasa_barang {
 :root {
   --primary-color: #27c6fa;
   --text-white: white;
+}
+
+.shadow-texts {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
 }
 
 .custom-badge-heading {
@@ -2720,6 +2737,9 @@ body {
 }
 
 @media (max-width: 552px) {
+  .card-pricisig p {
+    padding: 0px 20px;
+  }
   .content-reverse {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: reverse !important;

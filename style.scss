@@ -495,7 +495,19 @@ body {
 	}
 }
 
+.fade:not(.show) {
+	opacity: 1;
+}
+
 @media (max-width: 768px) {
+	.fade:not(.show) {
+		opacity: 0;
+	}
+
+	#customCloseButton {
+		display: block !important;
+	}
+
 	.all-product .col-md-4 {
 		width: 50% !important;
 	}
@@ -542,7 +554,9 @@ body {
 	}
 }
 
+
 @media (max-width: 552px) {
+
 	.card-pricisig p {
 		padding: 0px 20px;
 	}
